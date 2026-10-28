@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - นางสาว นิศาชล ขาวเหลือง</title>
+    <title>CV - นิศาชล ขาวเหลือง</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body { font-family: 'Sarabun', sans-serif; background-color: #f8fafc; padding: 20px; }
-        .header-gradient { background: linear-gradient(to right, #1e1b4b, #581c87, #0f172a); }
         @media print {
             body { background: white; padding: 0; }
             .no-print { display: none !important; }
@@ -19,126 +18,54 @@
 <body class="flex justify-center">
     <div class="w-full max-w-[820px]">
         
+        <!-- Document A4 Canvas Container -->
+        <div class="print-area bg-white shadow-xl sm:rounded-xl border border-slate-200 min-h-[700px] w-full max-w-[800px] mx-auto flex flex-col justify-between transition-all">
             
-            <!-- Document A4 Canvas Container -->
-            <div class="print-area bg-white shadow-xl sm:rounded-xl border border-slate-200 min-h-[1050px] w-full max-w-[800px] mx-auto flex flex-col justify-between transition-all">
+            <div class="cv-container p-8 sm:p-12">
                 
-                <div class="cv-container p-8 sm:p-12">
-                    
-                    <!-- CV HEADER -->
-                    <header class="border-b-2 border-slate-800 pb-6 mb-8">
-                        <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
-                            <div>
-                                <h1 id="out-name" class="text-3xl font-bold tracking-tight text-slate-900 uppercase">นางสาว นิศาชล ขาวเหลือง</h1>
-                                <p id="out-title" class="text-lg font-medium text-blue-700 mt-1">Senior UX/UI Designer &amp; Product Strategist</p>
+                <!-- CV HEADER (มีรูปโปรไฟล์ + ข้อมูลส่วนตัว) -->
+                <header class="border-b-2 border-slate-800 pb-6 mb-8">
+                    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                        
+                        <!-- Profile Image -->
+                        <div class="relative shrink-0">
+                            <div class="w-28 h-28 sm:w-32 sm:h-32 rounded-full p-1 bg-gradient-to-r from-violet-600 via-pink-500 to-amber-400 shadow-md">
+                                <img id="out-avatar" 
+                                     src="img/01.JPG" 
+                                     alt="Profile Image" 
+                                     class="w-full h-full object-cover rounded-full border-2 border-white">
                             </div>
                         </div>
 
-                        <!-- Contact Grid -->
-                        <div class="mt-4 pt-4 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4 text-xs text-slate-600">
-                            <div class="flex items-center gap-2">
-                                <i class="fa-solid fa-envelope text-slate-400 w-4"></i>
-                                <span id="out-email">nisa_ch@icloud.com</span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <i class="fa-solid fa-phone text-slate-400 w-4"></i>
-                                <span id="out-phone">093-365-1969</span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <i class="fa-solid fa-location-dot text-slate-400 w-4"></i>
-                                <span id="out-location">กระบี่, ประเทศไทย</span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <i class="fa-brands fa-linkedin text-slate-400 w-4"></i>
-                                <span id="out-linkedin">linkedin.com/in/somchai-design</span>
+                        <!-- Name & Contact -->
+                        <div class="flex-1 text-center sm:text-left">
+                            <h1 id="out-name" class="text-3xl font-bold tracking-tight text-slate-900 uppercase">นางสาว นิศาชล ขาวเหลือง</h1>
+                            <p id="out-title" class="text-lg font-medium text-violet-700 mt-1">[- / -]</p>
+
+                            <!-- Contact Grid -->
+                            <div class="mt-4 pt-4 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4 text-xs text-slate-600 text-left">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-envelope text-slate-400 w-4 text-center"></i>
+                                    <span id="out-email">nisa_ch@icloud.com</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-phone text-slate-400 w-4 text-center"></i>
+                                    <span id="out-phone">093-365-1969</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-location-dot text-slate-400 w-4 text-center"></i>
+                                    <span id="out-location">กระบี่, ประเทศไทย</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-brands fa-linkedin text-slate-400 w-4 text-center"></i>
+                                    <span id="out-linkedin">linkedin.com/in/nisachon-k</span>
+                                </div>
                             </div>
                         </div>
-                    </header>
-
-                    <!-- CV BODY SECTIONS -->
-                    <div class="space-y-7">
-
-                        <!-- Summary Section -->
-                        <section id="sec-summary">
-                            <h2 class="text-sm font-bold tracking-wider text-slate-900 uppercase border-b border-slate-200 pb-1.5 mb-3 flex items-center gap-2">
-                                <span class="w-2 h-2 bg-blue-600 rounded-full"></span> ประวัติโดยย่อ (Professional Summary)
-                            </h2>
-                            <p id="out-summary" class="text-xs sm:text-sm text-slate-700 leading-relaxed text-justify">-</p>
-                        </section>
-
-                        <!-- Work Experience Section -->
-                        <section id="sec-experience">
-                            <h2 class="text-sm font-bold tracking-wider text-slate-900 uppercase border-b border-slate-200 pb-1.5 mb-4 flex items-center gap-2">
-                                <span class="w-2 h-2 bg-blue-600 rounded-full"></span> ประวัติการทำงาน (Work Experience)
-                            </h2>
-                            <div id="out-experience-list" class="space-y-5"><div class="relative text-slate-800 group">
-                    <div class="absolute -left-[25px] sm:-left-[33px] top-1.5 w-3.5 h-3.5 rounded-full bg-violet-600 ring-4 ring-violet-50"></div>
-                    <div class="flex justify-between items-baseline flex-wrap gap-1">
-                        <h3 class="font-bold text-sm sm:text-base text-slate-900">Senior UX/UI Designer</h3>
-                        <span class="text-xs font-semibold text-violet-700 bg-violet-50 border border-violet-100 px-2.5 py-0.5 rounded-full">2021 – ปัจจุบัน</span>
                     </div>
-                    <div class="text-xs sm:text-sm font-semibold text-pink-600 mt-0.5">บริษัท ดิจิทัล โนวา จำกัด</div>
-                    <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 mt-2 space-y-1"><li>-</li></ul>
-                </div><div class="relative text-slate-800 group">
-                    <div class="absolute -left-[25px] sm:-left-[33px] top-1.5 w-3.5 h-3.5 rounded-full bg-violet-600 ring-4 ring-violet-50"></div>
-                    <div class="flex justify-between items-baseline flex-wrap gap-1">
-                        <h3 class="font-bold text-sm sm:text-base text-slate-900">UX/UI Designer</h3>
-                        <span class="text-xs font-semibold text-violet-700 bg-violet-50 border border-violet-100 px-2.5 py-0.5 rounded-full"></span>
-                    </div>
-                    <div class="text-xs sm:text-sm font-semibold text-pink-600 mt-0.5">-</div>
-                    <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 mt-2 space-y-1"><li>-</li><li>-</li></ul>
-                </div></div>
-                        </section>
+                </header>
 
-                        <!-- Education Section -->
-                        <section id="sec-education">
-                            <h2 class="text-sm font-bold tracking-wider text-slate-900 uppercase border-b border-slate-200 pb-1.5 mb-4 flex items-center gap-2">
-                                <span class="w-2 h-2 bg-blue-600 rounded-full"></span> ประวัติการศึกษา (Education)
-                            </h2>
-                            <div id="out-education-list" class="space-y-4"><div class="p-3.5 bg-slate-50/80 rounded-xl border border-slate-100 flex flex-col justify-between">
-                    <div>
-                        <span class="text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-100 inline-block mb-1.5">2014 – 2018</span>
-                        <h3 class="font-bold text-xs sm:text-sm text-slate-900">ศิลปกรรมศาสตรบัณฑิต (ออกแบบนิเทศศิลป์)</h3>
-                        <div class="text-xs text-slate-600 mt-0.5 font-medium">-</div>
-                    </div>
-                    <div class="text-xs text-slate-400 italic mt-2 border-t border-slate-200/60 pt-1">เกียรตินิยม (GPA -)</div>
-                </div></div>
-                        </section>
+                <!-- CV BODY SECTIONS -->
+                <div class="space-y-7">
 
-                        <!-- Skills Section -->
-                        <section id="sec-skills">
-                            <h2 class="text-sm font-bold tracking-wider text-slate-900 uppercase border-b border-slate-200 pb-1.5 mb-3 flex items-center gap-2">
-                                <span class="w-2 h-2 bg-blue-600 rounded-full"></span> ทักษะและความเชี่ยวชาญ (Skills)
-                            </h2>
-                            <div id="out-skills-list" class="flex flex-wrap gap-2 pt-1"><span class="bg-violet-50 text-violet-700 border-violet-200 text-xs font-semibold px-3 py-1 rounded-lg border shadow-xs">UX/UI Design</span><span class="bg-pink-50 text-pink-700 border-pink-200 text-xs font-semibold px-3 py-1 rounded-lg border shadow-xs">Figma</span><span class="bg-sky-50 text-sky-700 border-sky-200 text-xs font-semibold px-3 py-1 rounded-lg border shadow-xs">User Research</span><span class="bg-emerald-50 text-emerald-700 border-emerald-200 text-xs font-semibold px-3 py-1 rounded-lg border shadow-xs">Wireframing</span><span class="bg-amber-50 text-amber-800 border-amber-200 text-xs font-semibold px-3 py-1 rounded-lg border shadow-xs">Design Systems</span><span class="bg-indigo-50 text-indigo-700 border-indigo-200 text-xs font-semibold px-3 py-1 rounded-lg border shadow-xs">HTML/CSS</span><span class="bg-violet-50 text-violet-700 border-violet-200 text-xs font-semibold px-3 py-1 rounded-lg border shadow-xs">Prototyping</span><span class="bg-pink-50 text-pink-700 border-pink-200 text-xs font-semibold px-3 py-1 rounded-lg border shadow-xs">Usability Testing</span><span class="bg-sky-50 text-sky-700 border-sky-200 text-xs font-semibold px-3 py-1 rounded-lg border shadow-xs"></span></div>
-                        </section>
-
-                        <!-- Certifications Section -->
-                        <section id="sec-certs">
-                            <h2 class="text-sm font-bold tracking-wider text-slate-900 uppercase border-b border-slate-200 pb-1.5 mb-3 flex items-center gap-2">
-                                <span class="w-2 h-2 bg-blue-600 rounded-full"></span> ใบรับรองและรางวัล (Certifications &amp; Awards)
-                            </h2>
-                            <ul id="out-certs-list" class="list-disc list-inside text-xs sm:text-sm text-slate-700 space-y-1.5"><div class="flex items-center gap-2.5 p-2 bg-amber-50/50 rounded-lg border border-amber-100/80">
-                    <i class="fa-solid fa-ribbon text-amber-500 text-sm">-</i>
-                    <span class="font-medium text-slate-700">-</span>
-                </div><div class="flex items-center gap-2.5 p-2 bg-amber-50/50 rounded-lg border border-amber-100/80">
-                    <i class="fa-solid fa-ribbon text-amber-500 text-sm"></i>
-                    <span class="font-medium text-slate-700">-</span>
-                </div><div class="flex items-center gap-2.5 p-2 bg-amber-50/50 rounded-lg border border-amber-100/80">
-                    <i class="fa-solid fa-ribbon text-amber-500 text-sm"></i>
-                    <span class="font-medium text-slate-700">-</span>
-                </div></ul>
-                        </section>
-
-                    </div>
-                </div>
-
-                <!-- Footer note in PDF/Print -->
-                <div class="px-8 pb-6 text-center text-[10px] text-slate-400 no-print border-t border-slate-100 pt-4">
-                    เอกสารนี้ถูกจัดทำผ่านระบบ ProCV Builder ทางการ
-                </div>
-            </div>
-        
-    </div>
-</body>
-</html>
+                   
